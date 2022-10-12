@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    background-color: rgb(253, 254, 255);
+}
+nav .wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 0 8rem;
+    gap:15rem;
+   background-color: rgb(248, 247, 247);
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  
+}
+nav .wrap .left img{
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+nav .wrap .left,
+nav .wrap .right{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    gap:4rem;
+}
+
+nav .wrap .left{
+    padding: 7 rem;
+    display: flex;
+    gap: 0.7rem;
+    
+}
+nav .wrapper .logo i{
+font-size: 2 rem;
+color: #6caae7;
+}
+nav .wrapper .left .input{
+    background-color: rgba(145, 189, 219, 0.623);
+    display: flex;
+    width: 100%;
+   align-items:center;
+   font-size: 14px;
+   margin: 5px 8px;
+   padding-right: 5px;
+}
+nav .wrap .left .input input[type='search']{
+   width:14rem;
+   border: none;
+   background: transparent;
+}
+nav .wrap .left .input input[type='search']::placeholder{
+   font-size: 0.8rem;
+   color: rgb(48, 45, 45);
+   font-weight: 100;
+}
+nav .wrap .left .input i{
+   font-size: 0.8rem;
+   color: gray;
+}
+nav .wrap .right{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.wrap a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:20% 52% 28%;
+    gap:2rem;
+    width:85%;
+    margin: 1.8rem auto;
+}
+
+aside .sidebar{
+    background-color: rgba(240, 232, 232, 0.603);
+    height: 80vh;
+    width: 100%;
+    border-radius: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+.sidebar .top{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(38, 62, 70);
+    position: absolute;
+
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+     border-radius: 2px solid rgb(49, 45, 45);
+}
+aside .sidebar .profile{
+    position:absolute;
+    text-align:center;
+    top:20%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-bottom: 1px solid rgb(150, 146, 146);
+    height: 10vh;
+}
+.sidebar .profile a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar .profile a:hover{
+    text-decoration: underline;
+}
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color:gray;
+}
+.sidebar .view{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top:32%;
+    border-bottom: 1px solid rgb(150, 146, 146);
+    
+}
+.sidebar .view .views:hover{
+    background-color: grey;
+}
+.sidebar .view .views{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+.sidebar .view .views a{
+color: rgb(74, 74, 230);
+text-decoration: none;
+font-size: 0.8rem;
+}
+.sidebar .premium{
+    position: absolute;
+    top:45%;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgb(150, 146, 146);
+}
+.sidebar .premium h6{
+    color: gray;
+    font-weight: 100;
+}
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: black;
+}
+.sidebar .premium a i{
+     color: yellow;
+}
+.items{
+    position:absolute;
+    top:55%;
+    display: flex;
+    gap:2rem;
+    margin-left: 1rem;
+    color:rgb(131, 111, 111);
+    border-bottom: 1px solid rgb(150, 146, 146);
+}
+.sidebar .recent_jobs{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    top:60%;
+    border-bottom: 1px solid rgb(150, 146, 146);
+    overflow: hidden;
+}
+.sidebar .recent_jobs .recent{
+    margin: 1rem;
+    color: grey;
+}
+.sidebar .recent_jobs .recent h6{
+    font-weight: 100;
+    color: gray;
+}
+.sidebar .recent_jobs .recent ul{
+    display: flex;
+    margin-top: 2rem;
+    gap:15rem;
+    font-size: 0.1rem;
+    align-items: center;
+}
+    
+main{
+    background: rgb(238, 235, 235);
+    border-radius: 0.8rem;
+    height: 150vh;
+}
+main .media{
+    background: white;
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+}
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+main .media img{
+    width: 3.2em;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3 all ease;
+}
+main .media .search input:hover{
+    background: rgb(190, 185, 185);
+}
+main .media .posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6rem 2rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+main .media .posts .post:nth-child(1){
+    color: blue;
+}
+main .media .posts .post:nth-child(2){
+    color: rgb(47, 223, 135);
+}
+main .media .posts .post:nth-child(3){
+    color: rgb(37, 205, 235);
+}
+main .media .posts .post:nth-child(4){
+    color: rgb(230, 55, 192);
+}
+main .media .posts .post{
+    display: flex;
+    gap: 1rem;
+}
+main .post{
+    background: #fff;
+    padding: 20px 25px 5px;
+    margin:5px 0 15px;
+}
+main .post .post-author{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+main .post .post-author img{
+    width: 60px;
+}
+main .post .post-author h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+
+}
+main .post img,iframe{
+    width: 100%;
+}
+main .post .post-author small{
+    display: block;
+    margin-bottom: -2px;
+}
+.right_side{
+    background: rgb(238, 235, 235);
+    border-radius: 0.8rem;
+    height: 60vh;
+}
+.right_side .news{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    gap: 12rem;
+}
+.right_side .news h4{
+font-weight: 400;
+}
+.right_side .latest_news{
+margin: 0.5rem 1rem;
+gap:12rem;
+}
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+.right_side .latest_news .one i{
+    font-size: 0.5rem;
+    color: gray;
+}
+.right_side .latest_news .two{
+    margin: 0 2rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+.right_side .latest_news h5{
+    font-weight: 400;
+}
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+}
+.right_side .show_more h5{
+    font-weight: 400;
+}
